@@ -1,10 +1,10 @@
 @font-face {
     font-family: "helvetica";
-    src: url(assets/fonts/HelveticaWorld-Regular.ttf);
+    src: url(/assets/fonts/Helveticaworld.ttf);
 }
 
 body{
-    background-color: gray;
+    background-color: #ADA69D;
     font-family: "helvetica";
     padding: 80px;
     
@@ -25,7 +25,7 @@ header h1,h3 {
 }
 
 header nav{
-    background-color: rgb(163, 163, 163);
+    background-color: #8d8880;
     position: fixed;
     left: 0;
     right:0;
@@ -48,14 +48,14 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(83, 55, 36);
-    padding: 40px 80px;
-    
+    color: rgb(0, 0, 0);
+    padding: 15px 45px;
+    font-weight: bold;
     
 }
 
 nav ul li a:hover{
-    background-color: rgb(105, 103, 101);
+    background-color: rgb(19, 18, 17);
     color: white;
     
 }
@@ -83,30 +83,43 @@ nav ul li a:hover{
     max-width: 700px;
     width: 100%;
     box-sizing: border-box;
-    
-    
-    
-    
-    
 }
 
 #about{
     padding: 20px;
-
 }
 
-#presentation, #skills, #briefcase, #contact{
+#presentation, #skills, #briefcase, #contact, footer div{
     background-color: rgb(243, 243, 243) ;
     padding: 40px;
     margin: 10px 0px;
 }
 
+#projects{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
 
+#projects img{
+    width: 70%;
+    min-width: 130px;
+}
+
+#projects article{
+    padding: 20px;
+}
+
+footer div a{
+    text-decoration: none;
+    color: black;
+    padding: 30px;
+
+}
 
 @media(max-width:700px){
 
     body{
-        background-color: gray;
+        background-color: #ADA69D;
         font-family: "helvetica";
         padding: 2%;
         text-align: center;
@@ -116,8 +129,7 @@ nav ul li a:hover{
     header{
         background-color: rgb(243, 243, 243);
         padding: 7px;
-        position:initial;
-        width: 100%
+        position:inherit;
         
     }
     
@@ -127,9 +139,13 @@ nav ul li a:hover{
     }
     
     header nav{
-        background-color: rgb(163, 163, 163);
+        background-color: #8d8880;
         position: initial;
         width: 100%;
+    }
+
+    main{
+        padding-top: 10px;
     }
 
     nav{
@@ -154,16 +170,58 @@ nav ul li a:hover{
     
     nav ul li a {
         text-decoration: none;
-        color: rgb(83, 55, 36);
+        color: black;
         padding: 10px 80px;
         width:100%
+        
     
     }
     
     nav ul li a:hover{
-        background-color: rgb(105, 67, 41);
+        background-color: black; /*rgb(105, 67, 41); */
         color: white;
+    }
+
+    #presentation  {
+        display: block;
+        padding: 5px;
         
+    }
+    
+    #profilepic{
+        width: 90%;
+        padding: 10px;
+        overflow: hidden;
+    }
+    
+    #profilepic img{
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: white;
+        
+        object-fit: fill;
+        min-width: 50px;
+        max-width: 300px;
+        
+        box-sizing: border-box;
+    }
+
+    #about{
+        padding: 20px;
+    }
+
+    #projects{
+        display: block;
+    }
+    
+    #projects img{
+        width: 70%;
+        min-width: 130px;
+    }
+    
+    #projects article{
+        padding: 20px;
     }
 
 }
