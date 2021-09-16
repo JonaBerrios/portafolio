@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "helveticaworld";
-    src: url(/assets/fonts/Helveticaworld.ttf) format('truetype');
+    font-family: "averta";
+    src: url(/assets/fonts/Averta.otf);
 }
 
 body{
     background-color: #ADA69D;
-    font-family: "helveticaworld";
+    font-family: "averta";
     padding: 80px; 
 }
 
