@@ -1,11 +1,12 @@
 @font-face {
     font-family: "averta";
     src: url("/assets/fonts/Averta.otf");
+
 }
 
 body{
     background-color: #ADA69D;
-    font-family: "averta";
+    font-family: "averta", Arial, Helvetica, sans-serif;
     padding: 80px; 
 }
 
@@ -117,7 +118,7 @@ footer div a{
 
     body{
         background-color: #ADA69D;
-        font-family: "helvetica";
+        font-family: "averta", Arial, Helvetica, sans-serif;
         padding: 2%;
         text-align: center;       
     }
