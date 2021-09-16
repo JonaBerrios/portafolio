@@ -1,6 +1,6 @@
 @font-face {
     font-family: "averta";
-    src: url(/assets/fonts/Averta.otf);
+    src: url("/assets/fonts/Averta.otf");
 }
 
 body{
