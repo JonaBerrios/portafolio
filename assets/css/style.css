@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "helvetica";
-    src: url(/assets/fonts/Helveticaworld.ttf);
+    font-family: "helveticaworld";
+    src: url(/assets/fonts/Helveticaworld.ttf) format('truetype');
 }
 
 body{
     background-color: #ADA69D;
-    font-family: "helvetica";
+    font-family: "helveticaworld";
     padding: 80px; 
 }
 
